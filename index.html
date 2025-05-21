@@ -10,24 +10,26 @@
     href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Montserrat:wght@400;800&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
   <!-- HERO SECTION START -->
   <section id="Hero">
-    <nav>
-     <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-
-  <!-- This <label> becomes the hamburger icon; clicking it toggles the checkbox -->
-  <label for="nav-toggle" class="nav-toggle-label">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+    <nav>  
      <div class="logo">
         <img src="img/tecx white & blue 1 2.svg" alt="Logo" />
      </div>
-    <ul>
+      <ul class="sidebar">
+      <li class="close"><button onclick="closebar()"><i class="fa-solid fa-xmark"></i></button></li>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Speakers</a></li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">Gallery</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <ul class="mainbar">
       <li><a href="">Home</a></li>
       <li><a href="">About</a></li>
       <li><a href="">Speakers</a></li>
@@ -36,9 +38,10 @@
       <li><a href="">Contact</a></li>
     </ul>
     <a href="" class="btn">Register Now</a>
+    <button class="menu" onclick="openbar()"><img src="img/image.png" class="menu-icon" alt=""></button>
   </nav>
     <div class="poster-container">
-      <!-- Circuit‐board SVG as an external file -->
+     
       <img
         src="img/bg.svg"
         class="circuit-graphic"
@@ -46,7 +49,7 @@
       />
 
       <div class="content-wrapper">
-        <!-- Countdown row -->
+       
         <div class="countdown">
           <div class="time-block">
             <div class="number">36</div>
@@ -66,12 +69,12 @@
           </div>
         </div>
 
-        <!-- Logo / Title -->
+      
         <div class="logo-section">
           <img src="img/tecx white & blue 1 2.svg" alt="">
         </div>
 
-        <!-- Venue and Date -->
+        
         <div class="venue-info">
           <div class="venue">
             FEDERAL INSTITUTE OF SCIENCE AND TECHNOLOGY, ANGAMALY
@@ -79,7 +82,7 @@
           <div class="date">July 5th &amp; 6th</div>
         </div>
 
-        <!-- Footer logos (replace with your actual image files) -->
+       
         <div class="footer-logos">
           <div class="footer-logo-item">
             <img src="img/Frame 13.svg" alt="FISAT Student Branch" />
@@ -89,6 +92,6 @@
       </div>
     </div>
   </section>
-  <!-- HERO SECTION END -->
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --primary-color: #06CCE9;
     --border-gradient: linear-gradient(
@@ -7,17 +9,25 @@
   rgba(6, 204, 233, 0.36) 61%
   );
 }
+button
+{
+  background: transparent;
+  border: none;
+  color: white;
+}
 body
 {
     background-color: black;
+    color: white;
     z-index: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*====== NAVIGATION ======*/
 nav
 {
-    width: 1600px;
+    width: 90%;
     height: 100px;
     background: var(--border-gradient);
     border-radius: 20px;
@@ -74,22 +84,106 @@ li a
     border-radius: 20px;
     position: relative;
 }
+.menu
+{
+  display: none;
+}
+.sidebar
+{
+  position: fixed;
+  background-color: black;
+  z-index: 9999;
+  top: 20px;
+  height: 100%;
+  padding: 40px;
+  right: 0;
+  width: 20%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
+}
+nav .menu-icon{
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.sidebar .close 
+{
+  align-self: flex-end;
+}
+.sidebar .close i
+{
+  font-size: 70px;
+}
+@media (max-width: 1510px)
+{
+ .mainbar li a
+ {
+    font-size: 20px;
+ }
+ .btn
+ {
+    width: 150px;
+    padding: 20px;
+    font-size: 24px;
+ }
+}
+@media (max-width: 1309px)
+{
+  nav .logo img
+  {
+    position: absolute;
+    top:20px;
+    left: 30px;
+  }
+   .mainbar
+    {
+      display: none;
+    }
+    .menu
+    {
+      display: block;
+    }
+    .btn
+    {
+      position: absolute;
+      right: 120px;
+    }
+}
+@media (max-width: 728px)
+{
+  nav .logo img
+  {
+    padding: 10px;
+    width: 170px;
+  }
+}
+@media(max-width:598px)
+{
+  .btn
+  {
+    display: none;
+  }
+}
+/*====== HERO SECTION ======*/
 #Hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 500px); /* adjust if your nav is ~60px tall */
+  height: calc(100vh - 200px); 
   overflow: hidden;
 }
 
-/* Main container holding circuit graphic + centered content */
+
 .poster-container {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-/* Circuit‐board graphic (externally loaded SVG) */
+
 .circuit-graphic {
   position: absolute;
   top: 50%;
@@ -97,20 +191,19 @@ li a
   width: 25%;
   height: auto;
   transform: translateY(-50%);
-  opacity: 0.5;
   z-index: 1;
 }
 
-/* Wrapper for all central content, centered both ways */
+
 .content-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 75%;
+  width: 100%;
   max-width: 1200px;
   text-align: center;
-  z-index: 2;
+
 }
 
 /* ===== Countdown Row ===== */
@@ -128,7 +221,6 @@ li a
 }
 
 .time-block .number {
-  font-family: "Montserrat", sans-serif;
   font-size: 5rem;
   font-weight: 800;
   line-height: 1;
@@ -136,24 +228,25 @@ li a
 }
 
 .time-block .label {
-  font-size: 1.2rem;
+  font-size: 34px;
   font-weight: 700;
   margin-top: 5px;
-  color: #00c8ff; /* cyan accent */
-  letter-spacing: 1.5px;
+  color: #00c8ff; 
+  letter-spacing: 5px;
 }
 
-/* ===== Logo / Title Section ===== */
+
 .logo-section {
   margin-bottom: 40px;
 }
 .logo-section img
 {
+  margin-left: 30px;
     width: 700px;
 }
 
 
-/* ===== Venue & Date ===== */
+
 .venue-info {
   margin-top: 20px;
   margin-bottom: 60px;
@@ -188,17 +281,25 @@ li a
 
 
 /* ===== Responsive Tweaks (optional) ===== */
+@media (max-width: 1114px) {
+  .time-block .number
+  {
+    font-size: 3.5rem;
+  }
+  .time-block .label
+  {
+    font-size: 25px;
+  }
+}
 @media (max-width: 1024px) {
   .time-block .number {
     font-size: 4rem;
   }
-  .techx-logo {
-    font-size: 5rem;
+  .logo-section img
+  {
+    width: 500px;
   }
-  .techx-logo .x-end {
-    font-size: 5rem;
-    transform: translateX(-8px) skewX(-10deg);
-  }
+ 
 }
 
 @media (max-width: 768px) {
@@ -218,8 +319,26 @@ li a
   .tagline {
     font-size: 1.2rem;
   }
-  .footer-logo-item {
-    width: 80px;
+  .footer-logo-item img {
+    width: 700px;
   }
 }
-
+@media (max-width:568px)
+{
+   .logo-section img
+  {
+    width: 400px;
+  }
+  .footer-logo-item img {
+    width: 450px;
+  }
+}
+@media (max-width: 488px) {
+  .time-block .number {
+    font-size: 2.5rem;
+  }
+  .time-block .label
+  {
+    font-size: 12px;
+  }
+}

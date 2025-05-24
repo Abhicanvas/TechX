@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechX</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="">
+    <!-- Google Fonts (Roboto Condensed + Montserrat) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Montserrat:wght@400;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
+            background-color: black;
+            transition: margin-top 0.3s ease;
+            margin: 50px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            font-family: 'Jersey 25', sans-serif;
+
+        }
+
+
+        span {
+            color: #0CFFFF;
+        }
+
+        .home-img {
+            border-radius: 50%;
+        }
+
+        .home-content {
+            margin-left: 40px;
+        }
+
+        .home-img img {
+            width: 32vw;
+            max-width: 500px;
+            min-width: 200px;
+            border-radius: 4%;
+            box-shadow: 0 0 25px solid rgb(150, 5, 5);
+            cursor: default;
+            transition: 0.2s linear;
+        }
+
+        .text-section p {
+            color: white;
+            line-height: 22px;
+            letter-spacing: 1px
+        }
+
+        p.desc {
+            line-height: 22px;
+            letter-spacing: 1px;
+            color: white;
+            max-width: 550px;
+        }
+
+        .text-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+            background-color: black;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-section p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION START -->
+    <section id="wrk1">
+        <nav>
+            <div class="logo">
+                <img src="img/tecx white & blue 1 2.svg" alt="Logo" />
+            </div>
+            <ul class="sidebar">
+                <li class="close"><button onclick="closebar()"><i class="fa-solid fa-xmark"></i></button></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Speakers</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="mainbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Speakers</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <a href="" class="btn">Register Now</a>
+            <button class="menu" onclick="openbar()"><img src="img/image.png" class="menu-icon" alt=""></button>
+        </nav>
+        <section class="home">
+
+
+            <div class="home-content">
+
+                <h1> <span>CYBER SECURITY </span>WORKSHOP</h1>
+
+                <p class="desc">The IEEE FISAT Student Branch, established in
+                    2003, is among
+                    the top five in
+                    Kerala, with 460+
+                    members and 100+ new additions yearly. We promote tech innovation, professional growth, and
+                    community engagement through Flagship events like DROID, Spectrospect.
+                </p>
+
+
+            </div>
+            <div class="home-img">
+                <img class="box" src="/img/cybersec.png" alt="">
+            </div>
+
+
+
+        </section>
+    </section>
+    <section class="text-section">
+        <p>
+            Tech X is a dynamic and forward-thinking tech event designed to ignite innovation, inspire creativity, and
+            connect brilliant minds from across the globe. From emerging startups to industry leaders, Tech X brings
+            together technology enthusiasts, developers, entrepreneurs, and visionaries under one roof to explore the
+            latest trends shaping our digital future. With a focus on cutting-edge advancements like AI, blockchain,
+            IoT, cybersecurity, and sustainable tech, Tech X offers a platform for insightful keynotes, interactive
+            workshops, and more.
+        </p>
+    </section>
+</body>
+
+</html>

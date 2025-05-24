@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+h2
+{
+  color: white;
+  text-align: center;
+}
+h3
+{
+  color: white;
+}
+p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px; 
+  padding: 40px;
+}
+
+.sub-cont {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sub-cont span {
+  color: #00c8ff;
+  font-weight: bold;
+}

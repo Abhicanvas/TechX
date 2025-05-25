@@ -724,7 +724,7 @@ h2.h2-tb {
   }
 
   .timeline::after {
-    left: 20px;
+    left: 30px;
   }
 
   .containert {
@@ -751,7 +751,7 @@ h2.h2-tb {
   }
 
   .left-containert-arrow {
-    left: -45px;
+    left: -35px;
     transform: rotate(0deg);
     top: 20px;
     width: 30px;
@@ -759,7 +759,7 @@ h2.h2-tb {
   }
 
   .right-containert-arrow {
-    left: -45px;
+    left: -35px;
     top: 20px;
     width: 30px;
     height: 10px;

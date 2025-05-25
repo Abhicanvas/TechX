@@ -208,6 +208,7 @@ nav .menu-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background: #000;
 }
 .circuit-graphic {
   position: absolute;
@@ -306,7 +307,11 @@ nav .menu-icon {
   letter-spacing: 5px;
   color: var(--primary-color);
 }
-
+.footer-logo-item
+{
+  background-color: #000;
+  border-radius: 2rem;
+}
 .footer-logo-item img {
   width: 200px;
 }
@@ -386,7 +391,7 @@ nav .menu-icon {
   }
   .content-wrapper
   {
-    top: 20%;
+    top: 180px;
   }
   .time-block .number {
     font-size: 2.8rem;
@@ -425,7 +430,10 @@ nav .menu-icon {
   .logo-section img {
     width: 300px;
   }
-
+  .strip img
+  {
+    width: 80px;
+  }
   .footer-logos h1 {
     width: 80%;
     font-size: 18px;

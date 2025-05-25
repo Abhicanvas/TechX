@@ -786,11 +786,20 @@ body {
 
 .speakers-section h2 {
   font-size: 2.5rem;
-  color: #00cfff;
-  margin-bottom: 60px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  margin-bottom: 10px;
   text-shadow: 0 0 10px rgba(0, 207, 255, 0.3);
 }
-
+.speakers-section h3{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-size: 24px;
+  margin-bottom: 60px;
+  color: #0CFFFF;
+}
 /* Speaker Cards Container */
 .speaker-cards-container {
   display: flex;
@@ -813,7 +822,11 @@ body {
   border: 1px solid #222222;
   transition: all 0.3s ease;
 }
-
+.speaker-card h2
+{
+  margin-top: 90px;
+  color: var(--primary-color);
+}
 .speaker-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 207, 255, 0.2);
@@ -990,11 +1003,20 @@ body {
 
 
 .container h1 {
-  font-weight: 400;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
   font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.container h3{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #0CFFFF;
+  font-weight: lighter;
+  font-size: 1.5rem;
   margin-bottom: 50px;
 }
-
 .section {
   display: flex;
   justify-content: space-between;
@@ -1075,6 +1097,10 @@ body {
 }
 
 @media (max-width: 568px) {
+  .container h3
+  {
+    font-size: 18px;
+  }
   h1 {
     font-size: 1.5rem;
     margin-bottom: 40px;

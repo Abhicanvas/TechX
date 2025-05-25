@@ -386,7 +386,9 @@ nav .menu-icon {
 
   .footer-logos h1 {
     width: 80%;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 40px;
   }
 
   .time-block .label {

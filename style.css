@@ -542,6 +542,9 @@ p {
   justify-content: space-evenly;
   background: #000;
 }
+.strip img {
+  width: 200px;
+}
 @media (max-width: 500px) {
   #partners h1{
     margin-bottom: 5px;

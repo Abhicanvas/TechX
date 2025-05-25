@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -481,7 +482,10 @@ nav .menu-icon {
   animation: movedown 1s linear forwards;
   opacity: 0;
 }
-
+.containert p
+{
+  font-size: 18px;
+}
 @keyframes movedown {
   0% {
     opacity: 1;
@@ -514,6 +518,7 @@ p {
 h2.h2-tb {
   font-family: 'Jersey 25', sans-serif;
   font-weight: lighter;
+  margin-bottom: 10px;
 }
 
 .text-box-r {
@@ -711,7 +716,57 @@ h2.h2-tb {
     left: 13px;
   }
 }
+@media(max-width: 375px) {
+  .timeline {
+    margin: 50px auto;
+    min-width: 300px;
+    right: 0px;
+  }
 
+  .timeline::after {
+    left: 20px;
+  }
+
+  .containert {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 25px;
+  }
+  .containert p
+  {
+    font-size: 12px;
+  }
+  .text-box {
+    font-size: 12px;
+  }
+
+  .right-containert {
+    left: 0;
+  }
+
+  .left-containert img,
+  .right-containert img {
+    left: 16px;
+    width: 30px;
+  }
+
+  .left-containert-arrow {
+    left: -45px;
+    transform: rotate(0deg);
+    top: 20px;
+    width: 30px;
+    height: 10px;
+  }
+
+  .right-containert-arrow {
+    left: -45px;
+    top: 20px;
+    width: 30px;
+    height: 10px;
+    border-left: 0;
+  }
+
+}
 /* Base Styles */
 body {
   background-color: #000000;
@@ -1059,9 +1114,30 @@ body {
   margin-top: 50px;
   background-color: black;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 }
-
+#Gallery h1
+{
+ font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 42px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+#Gallery h3
+{
+ font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #0CFFFF;
+  font-weight: lighter;
+  font-size: 32px;
+  font-style: normal;
+  margin-bottom: 30px;
+}
 .gallery-content {
   display: flex;
   flex-direction: column;
@@ -1148,17 +1224,12 @@ body {
   }
 
   .parent {
-    display: flex !important;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    gap: 8px;
-    margin-left: 0;
-    /* ✅ Align flush left */
-    padding-left: 0;
-    /* ✅ No unwanted scroll offset */
-    box-sizing: border-box;
+       display: flex;
+      flex-direction: row;
+      overflow-x: scroll; 
+      width: 100%; 
+      height: fit-content;
+      gap: 20px;
   }
 
   .parent>div {
@@ -1184,7 +1255,12 @@ body {
     display: none;
   }
 }
-
+@media (max-width: 500px) {
+  #Gallery h3
+  {
+    font-size: 18px;
+  }
+}
 .main {
   display: flex;
   justify-content: center;
@@ -1416,3 +1492,200 @@ p.desc {
     text-align: center;
   }
 }
+  /* Footer */
+  .footer {
+    /* bottom: 0 !important; */
+    padding-bottom: 10px;
+    background: #000;
+    font-family: "Poppins", sans-serif;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    /* overflow: hidden; */
+    width: 100%;
+  }
+  .footer h1{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 42px;
+  font-style: normal;
+  margin-bottom: 10px;
+  }
+  .footer h3{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    color: #0CFFFF;
+    font-weight: lighter;
+    font-size: 32px;
+    font-style: normal;
+    margin-bottom: 30px;
+  }
+  .footer img {
+    translate: 0px -165px;
+    position: relative;
+    /* top: 165px; */
+
+  
+  }
+  
+  .footer-content {
+    margin-top: 100px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    bottom: 0;
+    gap: 180px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .footer-content p {
+    color: rgb(134, 134, 134);
+    font-size: small;
+    margin-top: 20px;
+  }
+  .footer .rights {
+    margin-top: 20px;
+    display: flex;
+    width: 88%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ .footerRights
+ {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+ }
+ .footerRights a {
+    color: #0CFFFF;
+    text-decoration: none;
+  }
+  .map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    position: relative;
+    top: 40px;
+    
+  }
+  .footer iframe{
+    height: 100%;
+    width: 80%;
+  
+  }
+  
+ #imgg{
+    height: 150px;
+    width: 600px;
+    position: relative;
+    top: -80px;
+    left: 175px;
+ 
+  }
+  
+  
+  
+  #frame{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: url(/img/impulsee.jpeg)  no-repeat;
+    
+  }
+  .footer .fcontent div{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    place-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .fcontent div a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer .fcontent div a:hover{
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px){
+    #imgg{
+      height:500px;
+      width: 500px;
+    }
+    
+    .footer {
+      background: #000;
+      font-family: "Poppins", sans-serif;
+      max-height: fit-content;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      align-items: center;
+      width: 100%;
+      place-items: center;
+    }
+    .footer img {
+      translate: 0px -20px;
+      position: relative;
+    }
+    
+    .footer-content {
+      margin-top: 100px;
+      display: flex;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      bottom: 0;
+      gap: 35px;
+      flex-direction: column ;
+      place-items: center;
+      justify-content: space-evenly;
+    }
+    
+    .footer-content p {
+      color: rgb(134, 134, 134);
+      font-size: small;
+      margin-top: 20px;
+    }
+    .footer .rights {
+      height: 10%;
+      font-size: 10px;
+      margin-top: 50px;
+      display: flex;
+      width: 80%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .map{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 50%;
+      position: relative;
+      top: 30px;
+      
+    }
+    .fcontent{
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+  
+    }
+    .footer iframe{
+      height: 60%;
+      width: 85%;
+    }
+  }

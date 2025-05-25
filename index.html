@@ -21,7 +21,7 @@
   <section id="Hero">
     <nav>
       <div class="logo">
-        <img src="img/tecx white & blue 1 2.svg" alt="Logo" />
+        <img src="img/SB logo_White 1 (1).svg" alt="Logo" />
       </div>
       <ul class="sidebar">
         <li class="close"><button onclick="closebar()"><i class="fa-solid fa-xmark"></i></button></li>
@@ -46,11 +46,11 @@
     <div class="poster-container">
 
       <img src="img/bg.svg" class="circuit-graphic" alt="Circuit Graphic" />
-      <div class="strip">
+      <!-- <div class="strip">
         <img src="img/ieeecssyp.svg" alt="">
         <img src="img/SB logo_White 1 (1).svg" alt="">
         <img src="img/IEEE_MB_white_RGB_300ppi 1.svg" alt="">
-      </div>
+      </div> -->
       <div class="content-wrapper">
         <div class="countdown">
           <div class="time-block day">
@@ -96,70 +96,88 @@
     </div>
   </section>
   <section id="About" class="about">
-    <div class="main-container">
-      <div class="sub-cont">
-        <h1>
-          ABOUT <span style="color: #06CCE9;">Event</span>
-        </h1>
-        <p>
-          TechXQuintessence is a flagship initiative by IEEE CS SBC FISAT in collaboration with IEEE CS SYP TechX
-          Initiative and IEEE CS Kerala Chapter, expecting participation from tech enthusiasts.  With over 120 participants,this two-day event
-          combines the power of learning, networking, and competitive spirit through hands-on workshops, expert-led tech
-          talks and an exciting CTF Competition.
-        </p>
+  <div class="main-container">
+    <!-- Static First Section -->
+    <div class="sub-cont">
+      <h1 class="event-title">
+        ABOUT <span style="color: #06CCE9;">Event</span>
+      </h1>
+      <p>
+        TechXQuintessence is a flagship initiative by IEEE CS SBC FISAT in collaboration with IEEE CS SYP TechX Initiative and IEEE CS Kerala Chapter, expecting participation from tech enthusiasts. With over 120 participants,this two-day event combines the power of learning, networking, and competitive spirit through hands-on workshops, expert-led tech talks and an exciting CTF Competition.
+      </p>
+    </div>
+
+    <!-- DROPDOWN TEMPLATES -->
+    <div class="dropdown">
+      <div class="dropdown-header">
+        <h1>ABOUT <span>TechX</span></h1>
+        <button class="dropdown-toggle">&#9662;</button>
       </div>
-      <div class="sub-cont">
-        <h1>
-          ABOUT <span style="color: #06CCE9;">TechX </span>
-        </h1>
+      <div class="dropdown-content">
         <p>
-          TechX is an initiative by the Computer Society Student and Young Professionals (SYP), aimed at empowering and
-          grooming future leaders through comprehensive sessions on emerging technologies, soft skills, leadership, and
-          industry engagement. Their goal is to provide a holistic platform to nurture talent and foster professional
-          growth. Funding opportunities of up to 1500 US Dollars available to eligible proposals.
-        </p>
-      </div>
-      <div class="sub-cont">
-        <h1>
-          ABOUT <span style="color: #06CCE9;">CS SYP </span>
-        </h1>
-        <p>
-          IEEE CS SYP is an engaging initiative by the IEEE Computer Society that brings together students and young
-          professionals from across the globe. The IEEE Computer Society SYP TechX initiative is a program designed to
-          empower and groom future leaders in computer science and engineering. It offers funding for innovative
-          projects and sessions on emerging technologies, soft skills, leadership, and industry engagement.
-        </p>
-      </div>
-      <div class="sub-cont">
-        <h1>
-          ABOUT <span style="color: #06CCE9;">IEEE FISAT SB</span>
-        </h1>
-        <p>
-          The IEEE FISAT Student Branch, established in 2003, is among the top five in Kerala, with 460+ members and
-          100+ new additions yearly. We promote tech innovation, professional growth, and community engagement through
-          events like DROID, Spectrospect, SIGNIFY, IMPULSE, WIEve Epilogue, and RIDE.
-        </p>
-      </div>
-      <div class="sub-cont">
-        <h1>
-          ABOUT <span style="color: #06CCE9;">IEEE CS SBC FISAT </span>
-        </h1>
-        <p>
-          The IEEE Computer Society Student Branch Chapter at FISAT is a vibrant center for innovation, skill-building,
-          and impactful initiatives. Consistently recognized for excellence, it secured 2nd place in 2021 and 3rd place
-          in both 2022 and 2023 in the CS SBC Chapter Presentations
-        </p>
-      </div>
-      <div class="sub-cont">
-        <h1>
-          ABOUT <span style="color: #06CCE9;">IEEE CS KC </span>
-        </h1>
-        <p>
-          IEEE Computer Society Kerala Chapter is a vibrant technical community under IEEE Kerala Section, dedicated to advancing computer science and engineering. It fosters collaboration and leadership through its active Student Branch Chapters and professional network across Kerala. The IEEE Computer Society Kerala Chapter has 145 professional members and 2051 student members.
+          TechX is an initiative by the Computer Society Student and Young Professionals (SYP), aimed at empowering and grooming future leaders through comprehensive sessions on emerging technologies, soft skills, leadership, and industry engagement. Their goal is to provide a holistic platform to nurture talent and foster professional growth. Funding opportunities of up to 1500 US Dollars available to eligible proposals.
         </p>
       </div>
     </div>
-  </section>
+
+    <div class="dropdown">
+      <div class="dropdown-header">
+        <h1>ABOUT <span>CS SYP</span></h1>
+        <button class="dropdown-toggle">&#9662;</button>
+      </div>
+      <div class="dropdown-content">
+        <p>
+          IEEE CS SYP is an engaging initiative by the IEEE Computer Society that brings together students and young professionals from across the globe. The IEEE Computer Society SYP TechX initiative is a program designed to empower and groom future leaders in computer science and engineering. It offers funding for innovative projects and sessions on emerging technologies, soft skills, leadership, and industry engagement.
+        </p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-header">
+        <h1>ABOUT <span>IEEE FISAT SB</span></h1>
+        <button class="dropdown-toggle">&#9662;</button>
+      </div>
+      <div class="dropdown-content">
+        <p>
+          The IEEE FISAT Student Branch, established in 2003, is among the top five in Kerala, with 460+ members and 100+ new additions yearly. We promote tech innovation, professional growth, and community engagement through events like DROID, Spectrospect, SIGNIFY, IMPULSE, WIEve Epilogue, and RIDE.
+        </p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-header">
+        <h1>ABOUT <span>IEEE CS SBC FISAT</span></h1>
+        <button class="dropdown-toggle">&#9662;</button>
+      </div>
+      <div class="dropdown-content">
+        <p>
+          The IEEE Computer Society Student Branch Chapter at FISAT stands as a distinguished center for fostering innovation, technical proficiency, and impactful initiatives among students. Demonstrating consistent excellence, the chapter achieved 2nd place in 2021 and 3rd place in both 2022 and 2023 in the CS SBC Chapter Presentations.
+        </p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-header">
+        <h1>ABOUT <span>IEEE CS KC</span></h1>
+        <button class="dropdown-toggle">&#9662;</button>
+      </div>
+      <div class="dropdown-content">
+        <p>
+         IEEE Computer Society Kerala Chapter is a vibrant technical community under IEEE Kerala Section, dedicated to advancing computer science and engineering. It fosters collaboration and leadership through its active Student Branch Chapters and professional network across Kerala. The IEEE Computer Society Kerala Chapter has 145 professional members and 2051 student members.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="partners">
+  <h1>Our Partners</h1>
+  <div class="strip">
+        <img src="img/ieeecssyp.svg" alt="">
+        <img src="img/IMG-20250212-WA0049 2 1.svg" alt="">
+        <img src="img/IEEE_MB_white_RGB_300ppi 1.svg" alt="">
+      </div>
+</section>
+
   <!-- SPEAKERS SECTION START -->
 
     <section id="Speaker" class="speakers-section">

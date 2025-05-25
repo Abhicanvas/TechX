@@ -45,3 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(timeline);
     }
 });
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const dropdownContent = button.closest('.dropdown').querySelector('.dropdown-content');
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      button.classList.toggle('rotate');
+    });
+  });
+
+
+
+

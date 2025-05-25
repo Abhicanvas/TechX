@@ -193,7 +193,7 @@ nav .menu-icon {
 #Hero {
   position: relative;
   width: 100%;
-  height: 110vh;
+  height: 120vh;
   overflow: hidden;
 }
 
@@ -203,7 +203,12 @@ nav .menu-icon {
   height: 100%;
 }
 
-
+.poster-container .strip
+{ width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .circuit-graphic {
   position: absolute;
   top: 50%;
@@ -217,8 +222,9 @@ nav .menu-icon {
 
 .content-wrapper {
   position: absolute;
-  top: 22%;
+  top: 27%;
   left: 50%;
+  height: 100vh;
   transform: translate(-50%);
   width: 100%;
   max-width: 1200px;
@@ -302,7 +308,7 @@ nav .menu-icon {
 }
 
 .footer-logo-item img {
-  width: 1000px;
+  width: 200px;
 }
 
 
@@ -327,12 +333,28 @@ nav .menu-icon {
   }
 
 }
-
+@media (max-width: 880px) {
+  .strip img
+  {
+    width: 150px;
+    margin-top: 20px;
+  }
+  .content-wrapper
+  {
+    top: 25%;
+  }
+}
 @media (max-width: 768px) {
+  #Hero {
+    height: 100vh;
+  }
   .time-block .number {
     font-size: 3rem;
   }
-
+.content-wrapper
+  {
+    top: 24%;
+  }
   .time-block .label {
     font-size: 1rem;
   }
@@ -350,19 +372,43 @@ nav .menu-icon {
     font-size: 1.2rem;
   }
 
-  .footer-logo-item img {
-    width: 700px;
-  }
+  
 }
 
 @media (max-width:568px) {
   .logo-section img {
     width: 400px;
   }
+ .strip img
+  {
+    width: 100px;
 
-  .footer-logo-item img {
-    width: 450px;
   }
+  .content-wrapper
+  {
+    top: 20%;
+  }
+  .time-block .number {
+    font-size: 2.8rem;
+  }
+
+  .time-block .label {
+    font-size: 14px;
+  }
+
+  .techx-logo {
+    font-size: 3rem;
+  }
+
+  .techx-logo .x-end {
+    font-size: 3rem;
+    transform: translateX(-6px) skewX(-10deg);
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
 }
 
 @media (max-width: 488px) {
@@ -378,10 +424,6 @@ nav .menu-icon {
 @media (max-width: 400px) {
   .logo-section img {
     width: 300px;
-  }
-
-  .footer-logo-item img {
-    width: 350px;
   }
 
   .footer-logos h1 {
@@ -1648,7 +1690,7 @@ p.desc {
     cursor: pointer;
   }
   
-  @media (max-width: 600px){
+  @media (max-width: 1000px){
     #imgg{
       height:500px;
       width: 500px;

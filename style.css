@@ -43,7 +43,8 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  position: relative;
+  position: sticky;
+  top: 50px;
   z-index: 1;
 }
 
@@ -59,14 +60,17 @@ nav::after {
   /* For better browser support */
   -webkit-backdrop-filter: blur(125px);
 }
-
+.mainbar{
+    position: relative;
+  left: 40px;
+}
 nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   gap: 50px;
   margin: 0;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
 }
@@ -1951,6 +1955,7 @@ p.desc {
   position: absolute;
   background-color: #0D0D0D;
   min-width: 150px;
+  margin-top: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 

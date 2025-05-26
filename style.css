@@ -1932,13 +1932,13 @@ p.desc {
   }
 }
 
-.dropdown {
+.dropdown-nav {
   position: relative;
   display: inline-block;
-  padding-top: 30px;
+
 }
 
-.dropbtn {
+.dropbtn-nav {
   color: white;
   text-decoration: none;
   font-size: 26px;
@@ -1946,7 +1946,7 @@ p.desc {
   cursor: pointer;
 }
 
-.dropdown-content {
+.dropdown-nav-content {
   display: none;
   position: absolute;
   background-color: #0D0D0D;
@@ -1956,18 +1956,18 @@ p.desc {
 
 }
 
-.dropdown-content a {
+.dropdown-nav-content a {
   color: white;
   padding: 10px 15px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-nav-content a:hover {
   background-color: #06CCE9;
   border-radius: 2px;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-nav:hover .dropdown-nav-content {
   display: block;
 }

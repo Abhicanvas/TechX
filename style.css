@@ -524,6 +524,77 @@ p {
   font-size: 19px;
  }
 }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.collab-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.collab-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00cfff;
+}
+
+/* Wrap the slider in a container with 70% width */
+.collab-container {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slider retains full content width */
+.collab-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.collab-track {
+  display: flex;
+  gap: 40px;
+  animation: slide-left 20s linear infinite;
+  width: max-content;
+}
+
+.collab-track img {
+  height: 80px;
+  width: auto;
+  filter: drop-shadow(0 0 10px #00cfff);
+  transition: transform 0.3s;
+}
+
+.collab-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .collab-container {
+    width: 90%;
+  }
+
+  .collab-track img {
+    height: 60px;
+  }
+}
+
 /* Partners Section */
 #partners
 {

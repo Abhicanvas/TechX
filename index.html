@@ -37,8 +37,13 @@
         <li><a href="#About">About</a></li>
         <li><a href="#Speaker">Speakers</a></li>
         <li><a href="">Pricing</a></li>
-        <li><a href="#Gallery">Gallery</a></li>
-        <li><a href="#footer">Contact</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">More ▼</a>
+          <div class="dropdown-content">
+            <a href="#Gallery">Gallery</a>
+            <a href="#footer">Contact</a>
+          </div>
+        </li>
       </ul>
       <a href="" class="btn">Register Now</a>
       <button class="menu" onclick="openbar()"><img src="img/image.png" class="menu-icon" alt=""></button>
@@ -96,80 +101,97 @@
     </div>
   </section>
   <section id="About" class="about">
-  <div class="main-container">
-    <!-- Static First Section -->
-    <div class="sub-cont">
-      <h1 class="event-title">
-        ABOUT <span style="color: #06CCE9;">Event</span>
-      </h1>
-      <p>
-        TechXQuintessence is a flagship initiative by IEEE CS SBC FISAT in coming under the IEEE CS SYP TechX Initiative in collaboration with IEEE CS Kerala Chapter, expecting participation from tech enthusiasts. With over 120 participants,this two-day event combines the power of learning, networking, and competitive spirit through hands-on workshops, expert-led tech talks and an exciting CTF Competition.
-      </p>
-    </div>
-
-    <!-- DROPDOWN TEMPLATES -->
-    <div class="dropdown">
-      <div class="dropdown-header">
-        <h1>ABOUT <span>TechX</span></h1>
-        <button class="dropdown-toggle">&#9662;</button>
-      </div>
-      <div class="dropdown-content">
+    <div class="main-container">
+      <!-- Static First Section -->
+      <div class="sub-cont">
+        <h1 class="event-title">
+          ABOUT <span style="color: #06CCE9;">Event</span>
+        </h1>
         <p>
-          TechX is an initiative by the Computer Society Student and Young Professionals (SYP), aimed at empowering and grooming future leaders through comprehensive sessions on emerging technologies, soft skills, leadership, and industry engagement. Their goal is to provide a holistic platform to nurture talent and foster professional growth. Funding opportunities of up to 1500 US Dollars available to eligible proposals.
+          TechXQuintessence is a flagship initiative by IEEE CS SBC FISAT in coming under the IEEE CS SYP TechX
+          Initiative in collaboration with IEEE CS Kerala Chapter, expecting participation from tech enthusiasts. With
+          over 120 participants,this two-day event combines the power of learning, networking, and competitive spirit
+          through hands-on workshops, expert-led tech talks and an exciting CTF Competition.
         </p>
       </div>
-    </div>
 
-    <div class="dropdown">
-      <div class="dropdown-header">
-        <h1>ABOUT <span>IEEE CS SYP</span></h1>
-        <button class="dropdown-toggle">&#9662;</button>
+      <!-- DROPDOWN TEMPLATES -->
+      <div class="dropdown">
+        <div class="dropdown-header">
+          <h1>ABOUT <span>TechX</span></h1>
+          <button class="dropdown-toggle">&#9662;</button>
+        </div>
+        <div class="dropdown-content">
+          <p>
+            TechX is an initiative by the Computer Society Student and Young Professionals (SYP), aimed at empowering
+            and grooming future leaders through comprehensive sessions on emerging technologies, soft skills,
+            leadership, and industry engagement. Their goal is to provide a holistic platform to nurture talent and
+            foster professional growth. Funding opportunities of up to 1500 US Dollars available to eligible proposals.
+          </p>
+        </div>
       </div>
-      <div class="dropdown-content">
-        <p>
-          IEEE CS SYP is an engaging initiative by the IEEE Computer Society that brings together students and young professionals from across the globe. The IEEE Computer Society SYP TechX initiative is a program designed to empower and groom future leaders in computer science and engineering. It offers funding for innovative projects and sessions on emerging technologies, soft skills, leadership, and industry engagement.
-        </p>
-      </div>
-    </div>
 
-    <div class="dropdown">
-      <div class="dropdown-header">
-        <h1>ABOUT <span>IEEE FISAT SB</span></h1>
-        <button class="dropdown-toggle">&#9662;</button>
+      <div class="dropdown">
+        <div class="dropdown-header">
+          <h1>ABOUT <span>IEEE CS SYP</span></h1>
+          <button class="dropdown-toggle">&#9662;</button>
+        </div>
+        <div class="dropdown-content">
+          <p>
+            IEEE CS SYP is an engaging initiative by the IEEE Computer Society that brings together students and young
+            professionals from across the globe. The IEEE Computer Society SYP TechX initiative is a program designed to
+            empower and groom future leaders in computer science and engineering. It offers funding for innovative
+            projects and sessions on emerging technologies, soft skills, leadership, and industry engagement.
+          </p>
+        </div>
       </div>
-      <div class="dropdown-content">
-        <p>
-          The IEEE FISAT Student Branch, established in 2003, is among the top five in Kerala, with 460+ members and 100+ new additions yearly. We promote tech innovation, professional growth, and community engagement through events like DROID, Spectrospect, SIGNIFY, IMPULSE, WIEve Epilogue, and RIDE.
-        </p>
-      </div>
-    </div>
 
-    <div class="dropdown">
-      <div class="dropdown-header">
-        <h1>ABOUT <span>IEEE CS SBC FISAT</span></h1>
-        <button class="dropdown-toggle">&#9662;</button>
+      <div class="dropdown">
+        <div class="dropdown-header">
+          <h1>ABOUT <span>IEEE FISAT SB</span></h1>
+          <button class="dropdown-toggle">&#9662;</button>
+        </div>
+        <div class="dropdown-content">
+          <p>
+            The IEEE FISAT Student Branch, established in 2003, is among the top five in Kerala, with 460+ members and
+            100+ new additions yearly. We promote tech innovation, professional growth, and community engagement through
+            events like DROID, Spectrospect, SIGNIFY, IMPULSE, WIEve Epilogue, and RIDE.
+          </p>
+        </div>
       </div>
-      <div class="dropdown-content">
-        <p>
-          The IEEE Computer Society Student Branch Chapter at FISAT stands as a distinguished center for fostering innovation, technical proficiency, and impactful initiatives among students. Demonstrating consistent excellence, the chapter achieved 2nd place in 2021 and 3rd place in both 2022 and 2023 in the CS SBC Chapter Presentations.
-        </p>
-      </div>
-    </div>
 
-    <div class="dropdown">
-      <div class="dropdown-header">
-        <h1>ABOUT <span>IEEE CS Kerala Chapter</span></h1>
-        <button class="dropdown-toggle">&#9662;</button>
+      <div class="dropdown">
+        <div class="dropdown-header">
+          <h1>ABOUT <span>IEEE CS SBC FISAT</span></h1>
+          <button class="dropdown-toggle">&#9662;</button>
+        </div>
+        <div class="dropdown-content">
+          <p>
+            The IEEE Computer Society Student Branch Chapter at FISAT stands as a distinguished center for fostering
+            innovation, technical proficiency, and impactful initiatives among students. Demonstrating consistent
+            excellence, the chapter achieved 2nd place in 2021 and 3rd place in both 2022 and 2023 in the CS SBC Chapter
+            Presentations.
+          </p>
+        </div>
       </div>
-      <div class="dropdown-content">
-        <p>
-         IEEE Computer Society Kerala Chapter is a vibrant technical community under IEEE Kerala Section, dedicated to advancing computer science and engineering. It fosters collaboration and leadership through its active Student Branch Chapters and professional network across Kerala. The IEEE Computer Society Kerala Chapter has 145 professional members and 2051 student members.
-        </p>
+
+      <div class="dropdown">
+        <div class="dropdown-header">
+          <h1>ABOUT <span>IEEE CS Kerala Chapter</span></h1>
+          <button class="dropdown-toggle">&#9662;</button>
+        </div>
+        <div class="dropdown-content">
+          <p>
+            IEEE Computer Society Kerala Chapter is a vibrant technical community under IEEE Kerala Section, dedicated
+            to advancing computer science and engineering. It fosters collaboration and leadership through its active
+            Student Branch Chapters and professional network across Kerala. The IEEE Computer Society Kerala Chapter has
+            145 professional members and 2051 student members.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- <section id="partners">
+  </section>
+  <!-- <section id="partners">
   <h1>Our Partners</h1>
   <div class="strip">
         <img src="img/ieeecssyp.svg" alt="">
@@ -178,93 +200,96 @@
       </div>
 </section> -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meet Our Collaborators</title>
-  <link rel="stylesheet" href="collab.css" />
-</head>
-<body>
-  <section class="collab-section">
-    <h2>Our Partners</h2>
-    <h3>Check Out Who Makes the Event Possible</h3>
-    <div class="collab-container">
-      <div class="collab-slider">
-        <div class="collab-track">
-          <img src="img/ieeecssyp.svg" alt="Collaborator 1" />
-          <img src="img/IMG-20250212-WA0049 2 1.svg" alt="Collaborator 2" />
-          <img src="img/techx logo 1.png" alt="Collaborator 3" />
-          <!-- Repeat for seamless loop -->
-          <img src="img/ieeecssyp.svg" alt="Collaborator 1" />
-          <img src="img/IMG-20250212-WA0049 2 1.svg" alt="Collaborator 2" />
-          <img src="img/techx logo 1.png" alt="Collaborator 3" />
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meet Our Collaborators</title>
+    <link rel="stylesheet" href="collab.css" />
+  </head>
+
+  <body>
+    <section class="collab-section">
+      <h2>Our Partners</h2>
+      <h3>Check Out Who Makes the Event Possible</h3>
+      <div class="collab-container">
+        <div class="collab-slider">
+          <div class="collab-track">
+            <img src="img/ieeecssyp.svg" alt="Collaborator 1" />
+            <img src="img/IMG-20250212-WA0049 2 1.svg" alt="Collaborator 2" />
+            <img src="img/techx logo 1.png" alt="Collaborator 3" />
+            <!-- Repeat for seamless loop -->
+            <img src="img/ieeecssyp.svg" alt="Collaborator 1" />
+            <img src="img/IMG-20250212-WA0049 2 1.svg" alt="Collaborator 2" />
+            <img src="img/techx logo 1.png" alt="Collaborator 3" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
-</html>
+    </section>
+  </body>
+
+  </html>
 
   <!-- SPEAKERS SECTION START -->
 
-    <section id="Speaker" class="speakers-section">
-      <h2>Meet Our Speakers</h2>
-      <h3>Insights From Industry Leaders</h3>
-      <div class="speaker-cards-container">
-        <!-- Card 1 -->
-        <div class="speaker-card">
-          <div class="card-image">
-            <!-- <img src="t1.img" alt="AI Session"> -->
-             <h2>Coming soon</h3>
+  <section id="Speaker" class="speakers-section">
+    <h2>Meet Our Speakers</h2>
+    <h3>Insights From Industry Leaders</h3>
+    <div class="speaker-cards-container">
+      <!-- Card 1 -->
+      <div class="speaker-card">
+        <div class="card-image">
+          <!-- <img src="t1.img" alt="AI Session"> -->
+          <h2>Coming soon</h3>
+        </div>
+        <div class="card-content">
+          <div class="speaker-info">
+            <img class="speaker-avatar" src="img/Neon Profile Icon in Cyan-Blue.png" alt="John Doe">
+            <div class="social-icons">
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fas fa-globe"></i>
+            </div>
           </div>
-          <div class="card-content">
-            <div class="speaker-info">
-              <img class="speaker-avatar" src="img/Neon Profile Icon in Cyan-Blue.png" alt="John Doe">
-              <div class="social-icons">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fas fa-globe"></i>
-              </div>
-            </div>
-            <h3></h3>
-            <p class="speaker-title">.........</p>
-            <!-- <p class="session-desc">........</p> -->
-            <div class="session-meta">
-              <span class="session-time"><i class="far fa-clock"></i> Day 1</span>
-              <span class="coming-label">Coming soon</span>
-            </div>
+          <h3></h3>
+          <p class="speaker-title">.........</p>
+          <!-- <p class="session-desc">........</p> -->
+          <div class="session-meta">
+            <span class="session-time"><i class="far fa-clock"></i> Day 1</span>
+            <span class="coming-label">Coming soon</span>
           </div>
         </div>
+      </div>
 
-        <!-- Card 2 -->
-        <div class="speaker-card">
-          <div class="card-image">
-            <!-- <img src="t2.img" alt="Robotics Session"> -->
-            <h2>Coming soon</h2>
+      <!-- Card 2 -->
+      <div class="speaker-card">
+        <div class="card-image">
+          <!-- <img src="t2.img" alt="Robotics Session"> -->
+          <h2>Coming soon</h2>
+        </div>
+        <div class="card-content">
+          <div class="speaker-info">
+            <img class="speaker-avatar" src="img/Neon Profile Icon in Cyan-Blue.png" alt="Alex Lee">
+            <div class="social-icons">
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fas fa-globe"></i>
+            </div>
           </div>
-          <div class="card-content">
-            <div class="speaker-info">
-              <img class="speaker-avatar" src="img/Neon Profile Icon in Cyan-Blue.png" alt="Alex Lee">
-              <div class="social-icons">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fas fa-globe"></i>
-              </div>
-            </div>
-            <h3></h3>
-            <p class="speaker-title">.........</p>
-            <!-- <p class="session-desc">How robotics is transforming industries from manufacturing to healthcare.</p> -->
-            <div class="session-meta">
-              <span class="session-time"><i class="far fa-clock"></i> Day 2</span>
-              <span class="coming-label">Coming Soon</span>
-            </div>
+          <h3></h3>
+          <p class="speaker-title">.........</p>
+          <!-- <p class="session-desc">How robotics is transforming industries from manufacturing to healthcare.</p> -->
+          <div class="session-meta">
+            <span class="session-time"><i class="far fa-clock"></i> Day 2</span>
+            <span class="coming-label">Coming Soon</span>
           </div>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <!-- <div class="speaker-card">
+      <!-- Card 3 -->
+      <!-- <div class="speaker-card">
           <div class="card-image">
             <img src="quan.img" alt="Quantum Session">
           </div>
@@ -286,101 +311,105 @@
             </div>
           </div>
         </div> -->
-      </div>
-    </section>
-
-
-    <section id="offer">
-      <div class="container">
-        <h1>Our Key Initiatives</h1>
-        <h3>Advance Skills Through Practical Exposure</h3>
-        <div class="section">
-          <div class="title">
-            <h4>
-              Code<span class="highlight">Crack</span>
-            </h4>
-
-          </div>
-          <div class="content">
-            Capture the Flag (CTF) is a thrilling coding competition where participants tackle a range of challenges to
-            earn points. It tests logical thinking, problem-solving, and technical skills, offering a dynamic platform
-            for coders to compete, learn, and showcase their talent under pressure.
-          </div>
-        </div>
-
-        <div class="section reverse">
-          <div class="title">
-            Industrial <span class="highlight"> Visit</span>
-          </div>
-          <div class="content">
-            The Industrial Visit offers students a unique opportunity to observe industry operations firsthand. It helps
-            bridge the gap between academic learning and real-world applications, providing valuable insights into
-            modern technologies, workflows, and professional practices. This experience enhances students' understanding
-            and prepares them for future roles in the tech-driven industry.
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="title">
-            Nanomentoring
-          </div>
-          <div class="content">
-            Nanomentoring delivers concise, targeted mentoring sessions designed to provide immediate, actionable career
-            guidance in just a few minutes. Through one-on-one interactions with industry experts, participants can
-            clarify doubts, explore opportunities in specific domains, and gain critical insights into current industry
-            trends and essential skills, empowering them to confidently shape their future careers with expert support.
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section id="timeline-section">
-      <div class="timelinebox">
-        <h2 style="text-align:center;font-size: 42px;font-family: 'Outfit', sans-serif;font-weight: lighter;">
-          Workshops
-        </h2>
-        <h3
-          style="text-align:center;font-size: 26px;letter-spacing: 4px; font-family: 'Outfit', sans-serif;font-weight: lighter;color: aqua;">
-          What We OFFER
-        </h3>
-        <div class="timeline">
-          <div class="containert right-containert ">
-            <img src="img/blk.png" alt="">
-            <div class="text-box-r">
-              <h2 class="h2-tb">Cyber Security Essentials</h2>
-              <p>This session covers the essentials of Cyber Security, including common threats and safe online practices. Participants will also learn key strategies to protect systems and data effectively.
-              </p>
-              <button class="read-more-btn"><a class="read-btn-text" href="#">Read More</a></button>
-              <span class="right-containert-arrow"></span>
-            </div>
-          </div>
-          <div class="containert left-containert">
-            <img src="img/blk.png" alt="">
-            <div class="text-box-l">
-              <h2 class="h2-tb">Low code No code </h2>
-              <p>This session introduces No-code/Low-code development, enabling rapid application building with minimal programming. Participants will explore popular platforms and learn to create functional solutions efficiently.
-
-              </p>
-              <button class="read-more-btn"><a class="read-btn-text" href="#">Read More</a></button>
-              <span class="left-containert-arrow"></span>
-            </div>
-          </div>
-          <div class="containert right-containert">
-            <img src="img/blk.png" alt="">
-            <div class="text-box-r">
-              <h2 class="h2-tb">Introduction to AI agents</h2>
-              <p> This session provides an introduction to AI Agents, their functionalities, and real-world applications. Participants will learn how these agents operate autonomously to solve tasks and enhance user experiences.
-              Talks on AI Agents
-              </p>
-              <button class="read-more-btn"><a class="read-btn-text" href="#">Read More</a></button>
-              <span class="right-containert-arrow"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     </div>
-  
+  </section>
+
+
+  <section id="offer">
+    <div class="container">
+      <h1>Our Key Initiatives</h1>
+      <h3>Advance Skills Through Practical Exposure</h3>
+      <div class="section">
+        <div class="title">
+          <h4>
+            Code<span class="highlight">Crack</span>
+          </h4>
+
+        </div>
+        <div class="content">
+          Capture the Flag (CTF) is a thrilling coding competition where participants tackle a range of challenges to
+          earn points. It tests logical thinking, problem-solving, and technical skills, offering a dynamic platform
+          for coders to compete, learn, and showcase their talent under pressure.
+        </div>
+      </div>
+
+      <div class="section reverse">
+        <div class="title">
+          Industrial <span class="highlight"> Visit</span>
+        </div>
+        <div class="content">
+          The Industrial Visit offers students a unique opportunity to observe industry operations firsthand. It helps
+          bridge the gap between academic learning and real-world applications, providing valuable insights into
+          modern technologies, workflows, and professional practices. This experience enhances students' understanding
+          and prepares them for future roles in the tech-driven industry.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title">
+          Nanomentoring
+        </div>
+        <div class="content">
+          Nanomentoring delivers concise, targeted mentoring sessions designed to provide immediate, actionable career
+          guidance in just a few minutes. Through one-on-one interactions with industry experts, participants can
+          clarify doubts, explore opportunities in specific domains, and gain critical insights into current industry
+          trends and essential skills, empowering them to confidently shape their future careers with expert support.
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="timeline-section">
+    <div class="timelinebox">
+      <h2 style="text-align:center;font-size: 42px;font-family: 'Outfit', sans-serif;font-weight: lighter;">
+        Workshops
+      </h2>
+      <h3
+        style="text-align:center;font-size: 26px;letter-spacing: 4px; font-family: 'Outfit', sans-serif;font-weight: lighter;color: aqua;">
+        What We OFFER
+      </h3>
+      <div class="timeline">
+        <div class="containert right-containert ">
+          <img src="img/blk.png" alt="">
+          <div class="text-box-r">
+            <h2 class="h2-tb">Cyber Security Essentials</h2>
+            <p>This session covers the essentials of Cyber Security, including common threats and safe online practices.
+              Participants will also learn key strategies to protect systems and data effectively.
+            </p>
+            <button class="read-more-btn"><a class="read-btn-text" href="#">Read More</a></button>
+            <span class="right-containert-arrow"></span>
+          </div>
+        </div>
+        <div class="containert left-containert">
+          <img src="img/blk.png" alt="">
+          <div class="text-box-l">
+            <h2 class="h2-tb">Low code No code </h2>
+            <p>This session introduces No-code/Low-code development, enabling rapid application building with minimal
+              programming. Participants will explore popular platforms and learn to create functional solutions
+              efficiently.
+
+            </p>
+            <button class="read-more-btn"><a class="read-btn-text" href="#">Read More</a></button>
+            <span class="left-containert-arrow"></span>
+          </div>
+        </div>
+        <div class="containert right-containert">
+          <img src="img/blk.png" alt="">
+          <div class="text-box-r">
+            <h2 class="h2-tb">Introduction to AI agents</h2>
+            <p> This session provides an introduction to AI Agents, their functionalities, and real-world applications.
+              Participants will learn how these agents operate autonomously to solve tasks and enhance user experiences.
+              Talks on AI Agents
+            </p>
+            <button class="read-more-btn"><a class="read-btn-text" href="#">Read More</a></button>
+            <span class="right-containert-arrow"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
   <section id="Gallery">
     <h1>Gallery</h1>
     <h3>Check Out Moments From The Past</h3>
@@ -398,62 +427,67 @@
 
   </section>
   <section id="footer"><!-- Footer -->
-  <div class="footer">
-    <h1>Contact</h1>
-    <h3>Get In Touch With Us</h3>
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180597765!2d76.40626477532166!3d10.231517589886055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1715874732686!5m2!1sen!2sin"
-        style="border: 0;" src="" frameborder="0" allowfullscreen loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    <div class="footer">
+      <h1>Contact</h1>
+      <h3>Get In Touch With Us</h3>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180597765!2d76.40626477532166!3d10.231517589886055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1715874732686!5m2!1sen!2sin"
+          style="border: 0;" src="" frameborder="0" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
-    <div class="footer-content">
-      <div class="fcontent">
-        <h4>Chair</h4>
-        <p>Advaith G Menon</p>
-        <!-- <p>Chair <br>IEEE FISAT SB</p> -->
-        <a href="https://api.whatsapp.com/send?phone=+918075352810"><p>+918075352810</p></a>
-      </div>
-       <div class="fcontent">
-        <h4>CS Chair</h4>
-        <p>Ann Maria Paul</p>
-        <!-- <p>Chair <br>IEEE FISAT SB</p> -->
-        <a href="https://api.whatsapp.com/send?phone=+917510920047"><p>+917510920047</p></a>
-      </div>
-      <div class="fcontent">
-        <h4>Mail Id</h4>
-        <p>ieeefisatsb@gmail.com</p>
-      </div>
-      <div class="fcontent">
-        <h4>Follow Us</h4>
-        <div>
-          <a href="https://www.instagram.com/ieeefisatsb/">
-
-            <i  class="fa-brands fa-instagram"></i>
+      <div class="footer-content">
+        <div class="fcontent">
+          <h4>Chair</h4>
+          <p>Advaith G Menon</p>
+          <!-- <p>Chair <br>IEEE FISAT SB</p> -->
+          <a href="https://api.whatsapp.com/send?phone=+918075352810">
+            <p>+918075352810</p>
           </a>
-          <a href="https://www.facebook.com/ieeefisat/">
+        </div>
+        <div class="fcontent">
+          <h4>CS Chair</h4>
+          <p>Ann Maria Paul</p>
+          <!-- <p>Chair <br>IEEE FISAT SB</p> -->
+          <a href="https://api.whatsapp.com/send?phone=+917510920047">
+            <p>+917510920047</p>
+          </a>
+        </div>
+        <div class="fcontent">
+          <h4>Mail Id</h4>
+          <p>ieeefisatsb@gmail.com</p>
+        </div>
+        <div class="fcontent">
+          <h4>Follow Us</h4>
+          <div>
+            <a href="https://www.instagram.com/ieeefisatsb/">
 
-            <i class="fa-brands fa-facebook"></i> </a>
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/ieeefisat/">
 
-          <a href="https://www.youtube.com/@ieeefisatsb1414">
-            <i class="fa-brands fa-youtube"></i> </a>
+              <i class="fa-brands fa-facebook"></i> </a>
 
+            <a href="https://www.youtube.com/@ieeefisatsb1414">
+              <i class="fa-brands fa-youtube"></i> </a>
+
+          </div>
+        </div>
+        <div class="fcontent">
+          <h4>
+            Address
+          </h4>
+          <p>Hormis Nagar,Mookanoor<br>Angamaly</p>
         </div>
       </div>
-      <div class="fcontent"><h4>
-        Address
-      </h4>
-      <p>Hormis Nagar,Mookanoor<br>Angamaly</p>
-    </div>
-    </div>
-  
-    
-    
-    <div class="footerRights">
-      <div> &copy;Copyright <b>IEEE FISAT SB</b>. All Rights Reserved</div>
-      <div><a href="">Designed with Love 💞 <b>TechXQuintessence WebTeam</b></a></div>
-    </div>
+
+
+
+      <div class="footerRights">
+        <div> &copy;Copyright <b>IEEE FISAT SB</b>. All Rights Reserved</div>
+        <div><a href="">Designed with Love 💞 <b>TechXQuintessence WebTeam</b></a></div>
+      </div>
   </section>
   <script src="script.js"></script>
 </body>

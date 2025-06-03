@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 :root {
@@ -1378,9 +1379,9 @@ h1 {
 /* Pricing Cards */
 .pricing-cards {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .pricing-card {
@@ -1394,7 +1395,9 @@ h1 {
 }
 
 .price-section {
-    background: #022d34;
+     background: linear-gradient(75deg,rgba(0, 0, 0, 0.6), rgba(6, 204, 233, 0.3));
+    backdrop-filter: blur(90px); /* Adds a blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
     padding: 1.5rem;
     text-align: left; /* Changed from center to left */
     border-bottom: 1px solid #e0f2fe;
@@ -1456,47 +1459,63 @@ h1 {
     border-radius: 0px; /* Fixed typo (was 00px) */
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
-
+.register-btn a
+{
+  text-decoration: none;
+}
 .register-btn:hover {
     background: #0c4149;
 }
 
 /* Replace your existing .pricing-cards styles with these: */
 
-.pricing-cards {
-    display: flex;
-    gap: 2rem;
-    padding: 1rem 2rem;
-    overflow-x: auto;
-    scroll-snap-type: x proximity;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
-    perspective: 1000px;
-    width: 100%;
-}
-
 .pricing-cards::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome/Safari */
 }
 
-.pricing-card {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    width: 300px;
-    /* Keep all your existing .pricing-card styles */
-}
 
 /* Add these media queries for responsive behavior */
 @media (max-width: 768px) {
-    .pricing-cards {
-        padding: 1rem;
-    }
-    
-    .pricing-page {
-        padding: 1rem;
-    }
+  .pricing-page {
+    overflow-x: hidden;
+    padding: 1rem;
+  }
+
+  .pricing-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+
+  }
+
+  .pricing-card {
+    flex: 0 0 auto;
+    width: 250px; /* slightly smaller width for easier swipe */
+  }
+  .pricing-card:first-child
+  {
+    margin-left: 300px
+  }
+}
+@media (max-width: 500px)
+{
+  .pricing-card:first-child
+  {
+    margin-left: 400px
+  }
+}
+@media (max-width: 418px)
+{
+.pricing-card:first-child
+  {
+    margin-left: 500px
+  }
 }
 
 .pricing-card:hover {
@@ -1504,6 +1523,7 @@ h1 {
     box-shadow: 0 20px 30px -10px rgba(6, 204, 233, 0.3);
     z-index: 20;
     border-color: #0af2ff; /* Brighter border on hover */
+    transition: 0.5s ease-in-out;
 }
 
 /* Add a glowing effect */
@@ -1516,7 +1536,7 @@ h1 {
     bottom: 0;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(6, 204, 233, 0);
-    transition: box-shadow 0.4s ease;
+    transition: 0.4s ease;
     pointer-events: none;
 }
 

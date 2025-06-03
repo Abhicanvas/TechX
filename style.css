@@ -1338,15 +1338,7 @@ body {
 
 /*=======Pricing=======*/
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
-body {
-    font-family: 'Outfit', system-ui, sans-serif;
-    background-color: #000000;
-    margin: 0;
-    padding: 0;
-    color: #334155;
-}
 
 .pricing-page {
     max-width: 1200px;
@@ -1382,8 +1374,14 @@ h1 {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    padding: 20px;
 }
-
+.subtitle
+{
+  color: #00cfff;
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: lighter;
+}
 .pricing-card {
     background: #020202;
     border-radius: 12px;
@@ -1549,6 +1547,10 @@ h1 {
   {
     margin-left: 400px
   }
+  .subtitle
+  {
+    letter-spacing: 0.2rem;
+  }
 }
 @media (max-width: 418px)
 {
@@ -1558,7 +1560,13 @@ h1 {
   }
 }
 
-
+@media (max-width: 330px)
+{
+.pricing-card:first-child
+  {
+    margin-left: 550px
+  }
+}
 
 
 /*=======Gallery=======*/

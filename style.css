@@ -1474,7 +1474,47 @@ h1 {
 .pricing-cards::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome/Safari */
 }
+@media (hover: hover) and (pointer: fine) {
+  .pricing-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 30px -10px rgba(6, 204, 233, 0.3);
+    z-index: 20;
+    border-color: #0af2ff; /* Brighter border on hover */
+    transition: 0.5s ease-in-out;
+  }
+}
 
+.pricing-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 30px -10px rgba(6, 204, 233, 0.3);
+    z-index: 20;
+    border-color: #0af2ff; /* Brighter border on hover */
+    transition: 0.5s ease-in-out;
+}
+
+/* Add a glowing effect */
+.pricing-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(6, 204, 233, 0);
+    transition: 0.4s ease;
+    pointer-events: none;
+}
+
+.pricing-card:hover::after {
+    box-shadow: 0 0 15px rgba(6, 204, 233, 0.6);
+}
+
+/* Make non-hovered cards recede slightly */
+.pricing-cards:hover .pricing-card:not(:hover) {
+    filter: brightness(0.7);
+    opacity: 0.85;
+}
 
 /* Add these media queries for responsive behavior */
 @media (max-width: 768px) {
@@ -1518,37 +1558,7 @@ h1 {
   }
 }
 
-.pricing-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 20px 30px -10px rgba(6, 204, 233, 0.3);
-    z-index: 20;
-    border-color: #0af2ff; /* Brighter border on hover */
-    transition: 0.5s ease-in-out;
-}
 
-/* Add a glowing effect */
-.pricing-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(6, 204, 233, 0);
-    transition: 0.4s ease;
-    pointer-events: none;
-}
-
-.pricing-card:hover::after {
-    box-shadow: 0 0 15px rgba(6, 204, 233, 0.6);
-}
-
-/* Make non-hovered cards recede slightly */
-.pricing-cards:hover .pricing-card:not(:hover) {
-    filter: brightness(0.7);
-    opacity: 0.85;
-}
 
 
 /*=======Gallery=======*/

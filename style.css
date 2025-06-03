@@ -1334,6 +1334,203 @@ body {
   }
 }
 
+
+/*=======Pricing=======*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Outfit', system-ui, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color: #334155;
+}
+
+.pricing-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #028fa4;
+    letter-spacing: 1cqh;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* Pricing Cards */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: #020202;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid #06cce9;
+}
+
+.price-section {
+    background: #022d34;
+    padding: 1.5rem;
+    text-align: left; /* Changed from center to left */
+    border-bottom: 1px solid #e0f2fe;
+}
+
+.price-section h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #06cce9;
+    margin: 0 0 0.5rem 0;
+    text-align: left; /* Added to ensure left alignment */
+    padding-left: 0.5rem; /* Added for better spacing from edge */
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 350;
+    color: #ffffff;
+    text-align: center; /* Align price to left as well */
+    padding-left: 0.5rem; /* Match h3 padding */
+}
+
+.features {
+    list-style: none;
+    padding: 1.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+.features li {
+    padding: 0.5rem 0;
+
+    color:gray;
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+.features li::before {
+    content: "•";
+    color: gray;
+    font-size: 1.6rem;
+    position:absolute  ;
+    left: 0;
+  }
+
+.register-btn {
+    display: block;
+    width: calc(100% - 3rem);
+    margin: 0 1.5rem 1.5rem;
+    padding: 0.6rem;
+    background: #000000;
+    color: white;
+    border: 1px solid #027182; /* Changed from border-color to border */
+    border-radius: 0px; /* Fixed typo (was 00px) */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.register-btn:hover {
+    background: #0c4149;
+}
+
+/* Replace your existing .pricing-cards styles with these: */
+
+.pricing-cards {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+    perspective: 1000px;
+    width: 100%;
+}
+
+.pricing-cards::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.pricing-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 300px;
+    /* Keep all your existing .pricing-card styles */
+}
+
+/* Add these media queries for responsive behavior */
+@media (max-width: 768px) {
+    .pricing-cards {
+        padding: 1rem;
+    }
+    
+    .pricing-page {
+        padding: 1rem;
+    }
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 30px -10px rgba(6, 204, 233, 0.3);
+    z-index: 20;
+    border-color: #0af2ff; /* Brighter border on hover */
+}
+
+/* Add a glowing effect */
+.pricing-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(6, 204, 233, 0);
+    transition: box-shadow 0.4s ease;
+    pointer-events: none;
+}
+
+.pricing-card:hover::after {
+    box-shadow: 0 0 15px rgba(6, 204, 233, 0.6);
+}
+
+/* Make non-hovered cards recede slightly */
+.pricing-cards:hover .pricing-card:not(:hover) {
+    filter: brightness(0.7);
+    opacity: 0.85;
+}
+
+
 /*=======Gallery=======*/
 #Gallery {
   position: relative;

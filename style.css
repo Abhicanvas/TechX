@@ -1472,15 +1472,7 @@ h1 {
 .pricing-cards::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome/Safari */
 }
-@media (hover: hover) and (pointer: fine) {
-  .pricing-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 20px 30px -10px rgba(6, 204, 233, 0.3);
-    z-index: 20;
-    border-color: #0af2ff; /* Brighter border on hover */
-    transition: 0.5s ease-in-out;
-  }
-}
+
 
 .pricing-card:hover {
     transform: translateY(-10px) scale(1.03);

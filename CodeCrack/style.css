@@ -48,7 +48,7 @@ nav {
   align-items: center;
   position: sticky;
   top: 50px;
-  z-index: 1;
+  z-index: 5;
 }
 
 nav::after {
@@ -471,6 +471,7 @@ nav .menu-icon {
   background: #000;
   color: #fff;
   padding: 0px 20px;
+  margin-bottom: 70px;
 }
 
 .main-container {
@@ -638,6 +639,12 @@ p {
     height: 60px;
   }
 }
+.timeline-section 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .timeline {
   position: relative;
   margin: 100px auto;
@@ -645,7 +652,23 @@ p {
   margin-left: 15%;
   max-width:1200px;
 }
+.timeline-section h1 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 42px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
 
+.timeline-section h3 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--primary-color);
+  font-weight: lighter;
+  font-size: 32px;
+  font-style: normal;
+}
 
 .containert {
   padding: 10px 50px;
@@ -891,7 +914,7 @@ h2.h2-tb {
 .footer h3 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  color: #0CFFFF;
+  color: var(--primary-color);
   font-weight: lighter;
   font-size: 32px;
   font-style: normal;
@@ -944,7 +967,7 @@ h2.h2-tb {
 }
 
 .footerRights a {
-  color: #0CFFFF;
+  color: var(--primary-color);
   text-decoration: none;
 }
 

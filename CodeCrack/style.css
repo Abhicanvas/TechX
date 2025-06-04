@@ -832,7 +832,12 @@ h2.h2-tb {
     left: 13px;
   }
 }
-
+@media(max-width: 450px) {
+  .timeline-section h3
+  {
+    font-size: 24px;
+  }
+}
 @media(max-width: 375px) {
   .timeline {
     margin: 50px auto;
@@ -884,7 +889,10 @@ h2.h2-tb {
     height: 10px;
     border-left: 0;
   }
-
+    .timeline-section h3
+  {
+    font-size: 21px;
+  }
 }
 
 /* Footer */

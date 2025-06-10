@@ -16,8 +16,6 @@
   rgba(176, 38, 255, 0.36) 0%,
   rgba(176, 38, 255, 0.5) 27%,
   rgba(176, 38, 255, 0.36) 61%);
-
-
 }
 
 button {
@@ -89,6 +87,7 @@ li a {
   padding: 30px;
   font-size: 30px;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   text-align: center;
   border: var(--primary-color) solid 1px;

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechXQuintessence</title>
+  <link rel="icon" href="img/tecx white & blue 1 2 logo.psd" type="image/x-icon" />
+  <!-- Google Fonts (Roboto Condensed + Montserrat) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Montserrat:wght@400;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+
+.timeline {
+  position: relative;
+  margin: 100px auto;
+  width: 100%;
+  margin-left: 0;
+  max-width:1200px;
+}
+
+
+.containert {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  opacity: 1;
+}
+
+.containert p {
+  font-size: 18px;
+}
+
+
+p {
+  font-family: 'Cairo', sans-serif;
+  color: #999999;
+}
+
+h2.h2-tb {
+  font-family: 'Jersey 25', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.text-box-r {
+  padding: 20px 30px;
+  background: #0D0D0D;
+  position: relative;
+  border-radius: 2px;
+  font-size: 15px;
+  word-break: break-word;
+  left: 25px;
+  color: white;
+
+}
+
+.right-containert {
+  left: 30px;
+}
+
+.containert img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+  border: 2px #b026ff solid;
+
+}
+
+.right-containert img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 93%; 
+  background: #fff;
+  top: 35px;
+  left: 30px;
+  margin-left: -3px;
+  z-index: -1;
+  animation: none;
+  background: repeating-linear-gradient(to right,
+    #b026ff 0,
+      #b026ff 1px,
+      transparent 2px,
+      transparent 4px,
+      #b026ff 5px,
+      #b026ff 6px);
+
+}
+
+
+
+
+
+
+
+.right-containert-arrow {
+
+  position: absolute;
+  top: 27px;
+  left: -90px;
+  z-index: 1;
+  width: 79px;
+  height: 22px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  background-color: #b026ff;
+  clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+  transform: rotate(0deg);
+}
+
+
+
+@media screen and (max-width:600px) {
+  .timeline {
+    margin: 50px auto;
+    min-width: 380px;
+    right: 0px;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .containert {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .text-box {
+    font-size: 13px;
+  }
+
+
+
+  .right-containert {
+    left: 0;
+  }
+
+  .left-containert img,
+  .right-containert img {
+    left: 16px;
+    width: 30px;
+  }
+
+  .left-containert-arrow {
+    left: -45px;
+    transform: rotate(0deg);
+    top: 20px;
+    width: 30px;
+    height: 10px;
+  }
+
+  .right-containert-arrow {
+    left: -45px;
+    top: 20px;
+    width: 30px;
+    height: 10px;
+    border-left: 0;
+  }
+
+  .text-box-l,
+  .text-box-r {
+    left: 13px;
+  }
+}
+
+@media(max-width: 375px) {
+  .timeline {
+    margin: 50px auto;
+    min-width: 300px;
+    right: 0px;
+  }
+
+  .timeline::after {
+    left: 30px;
+  }
+
+  .containert {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 25px;
+  }
+
+  .containert p {
+    font-size: 12px;
+  }
+
+  .text-box {
+    font-size: 12px;
+  }
+
+  .right-containert {
+    left: 0;
+  }
+
+  .left-containert img,
+  .right-containert img {
+    left: 16px;
+    width: 30px;
+  }
+
+  .left-containert-arrow {
+    left: -35px;
+    transform: rotate(0deg);
+    top: 20px;
+    width: 30px;
+    height: 10px;
+  }
+
+  .right-containert-arrow {
+    left: -35px;
+    top: 20px;
+    width: 30px;
+    height: 10px;
+    border-left: 0;
+  }
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: #000000;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+</style>
+</head>
+
+<body>
+
+ 
+
+
+   
+ 
+
+
+ <section id="timeline-section">
+  <div class="timelinebox">
+   
+
+    <div class="timeline">
+      <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb">Competition Rules & Guidelines</h2>
+          <p>Welcome to the challenge. To ensure a fair, engaging, and secure experience for all participants, please adhere to the following rules:</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+
+      <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb"> Scoring System</h2>
+          <p>Points are awarded based on the difficulty level of each challenge and the number of teams that successfully solve them. More difficult challenges and fewer solves result in higher points</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+
+      <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb"> Play Fair</h2>
+          <p>Sharing solutions between teams is strictly prohibited. Teams are expected to compete independently and ethically.</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+      <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb"> Respect the Environment</h2>
+          <p>Any attempt to attack other teams’ systems or the event infrastructure is not allowed. Maintain a respectful and secure environment throughout the event.</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+      <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb">  Act Responsibly</h2>
+          <p>Disruptive actions that impact the availability, fairness, or integrity of the competition are not tolerated.</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+      <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb">  Stay Legal</h2>
+          <p>All tools, techniques, and methods used during the competition must comply with applicable laws and regulations.</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+      <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb"> Teamwork is Key</h2>
+          <p>Collaboration within your team is strongly encouraged. However, collusion or cooperation between different teams is strictly prohibited.</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+       <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb"> Judges Have the Final Say</h2>
+          <p>All decisions made by the judging panel are final. Judges are responsible for ensuring a fair and balanced competition.</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+       <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb"> Respect and Integrity</h2>
+          <p>Participants are expected to follow the event’s Code of Conduct and behave with integrity and professionalism at all times.</p>
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+       <div class="containert right-containert">
+        <img src="img/blk.png" alt="">
+        <div class="text-box-r">
+          <h2 class="h2-tb">Victory Awaits</h2>
+          <p>The team with the highest score at the end of the event will be declared the winner.</p>
+          <!-- <button class="read-more-btn"><a class="read-btn-text" href="#">Read More</a></button> -->
+          <span class="right-containert-arrow"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+ 
+  <script src="script.js"></script>
+</body>
+
+</html>

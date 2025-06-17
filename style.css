@@ -1251,17 +1251,18 @@ body {
 }
 
 .content .link {
- display: flex;
+  display: flex;
   flex-direction: row;
   text-decoration: none;
   align-items: center;
   color: #ffffff;
 }
-.link a
-{
+
+.link a {
   position: relative;
   top: 20px;
 }
+
 .section .title .flg {
   width: 25px;
   height: 25px;
@@ -1287,7 +1288,7 @@ body {
 
 .read-more-btn {
   position: relative;
-  top: 35px;
+  top: 5px;
   margin-top: 10px;
   padding: 8px 12px;
   background-color: #06cce9;
@@ -1349,9 +1350,9 @@ body {
   .section .content {
     font-size: 1rem;
   }
-  .read-more-btn
-  {
-    transform: translateX(-50%);
+
+  .read-more-btn {
+    transform: translateX(0%);
     margin-bottom: 20px;
   }
 
@@ -1377,13 +1378,14 @@ body {
   .section .content {
     font-size: 1rem;
   }
-  .content .link{
+
+  .content .link {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  .link a
-  {
+
+  .link a {
     width: 100px;
     margin-top: 10px;
   }

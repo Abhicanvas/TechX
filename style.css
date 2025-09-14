@@ -578,47 +578,64 @@ body {
 }
 
 /* Slider retains full content width */
-.collab-slider {
+/* Outer viewport: visible area is 70% wide */
+.collab-container {
+  width: 70%;
+  margin: 0 auto;     /* center optional */
   overflow: hidden;
-  width: 100%;
 }
 
+/* slider wrapper (keeps things simple) */
+.collab-slider {
+  display: block;
+}
+
+/* Keep the track at its natural content width so items don't get squashed.
+   inline-flex ensures the track can be wider than container without being scaled. */
 .collab-track {
+  display: inline-flex;        /* natural width = sum of both sets */
+  align-items: center;
+  white-space: nowrap;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  animation: collab-marquee 20s linear infinite;
+}
+
+/* Each set is just a horizontal row (no forced width) */
+.collab-track .set {
   display: flex;
-  gap: 40px;
-  animation: slide-left 20s linear infinite;
-  width: max-content;
+  align-items: center;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
-.collab-track img {
-  height: 80px;
-  width: 200px;
-  transition: transform 0.3s;
+/* Logos: prevent growing/shrinking and reserve integer px height */
+.collab-track .set img {
+  display: block;
+  flex: 0 0 auto;        /* don't grow or shrink */
+  height: 60px;          /* integer pixels avoid subpixel rounding */
+  width: 300px;
+  object-fit: contain;
+  margin-right: 40px;    /* explicit gap */
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
-.collab-track img:hover {
-  transform: scale(1.1);
+/* To avoid a visible double-gap at the seam, remove margin on last item in each set */
+.collab-track .set img:last-child {
+  margin-right: 20px;
 }
 
-@keyframes slide-left {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
+/* Slightly larger on desktop */
+@media (min-width: 768px) {
+  .collab-track .set img { height: 80px; }
 }
 
-
-@media (max-width: 768px) {
-  .collab-container {
-    width: 90%;
-  }
-
-  .collab-track img {
-    height: 60px;
-  }
+/* Animate by half the track's own width — because the track contains two identical sets */
+@keyframes collab-marquee {
+  0%   { transform: translate3d(0,0,0); }
+  100% { transform: translate3d(-50%,0,0); }
 }
 
 /* Partners Section */

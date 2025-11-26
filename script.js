@@ -23,8 +23,6 @@ function closebar() {
 //     document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
 // }
 
-setInterval(updateCountdown, 1000);
-updateCountdown(); // initial call
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -48,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.dropdown-header').forEach(button => {
     button.addEventListener('click', () => {
       const dropdownContent = button.closest('.dropdown').querySelector('.dropdown-content');
-      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      dropdownContent.style.display = dropdownContent.style.display === 'none' ? 'block' : 'none';
       button.classList.toggle('rotate');
     });
   });
-
+console.log("Script loaded successfully.");
 
 
 
